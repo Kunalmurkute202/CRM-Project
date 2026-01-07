@@ -1,0 +1,310 @@
+/* ==============================================
+   CUSTOMER DASHBOARD - CLEAN LIGHT THEME
+================================================= */
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #9ea2b7; /* soft light background */
+  font-family: Arial, sans-serif;
+}
+
+/* -------------------------
+   SIDEBAR
+------------------------- */
+.sidebar {
+  width: 250px;
+  background: #b4c4d3; /* light container */
+  padding: 20px;
+  flex-shrink: 0;
+  border-right: 1px solid #c9c6d8;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 12px 15px;
+  margin: 6px 0;
+  background: #b4b8c0;
+  color: #0e0505 ;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar-menu li:hover,
+.sidebar-menu li.active {
+  background: #b0b5be; /* same as table hover */
+}
+
+.sidebar-menu button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 4px;
+  background: #b03a58; /* blue button */
+  color: #091428;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.sidebar-menu button:hover {
+  background: #9a25a9;
+}
+
+/* -------------------------
+   DASHBOARD CONTENT
+------------------------- */
+.dashboard-content {
+  flex-grow: 1;
+  padding: 25px;
+  overflow-y: auto;
+}
+
+/* -------------------------
+   CRM MODULE CONTAINER
+------------------------- */
+.crm-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto 30px auto;
+  padding: 25px;
+  background: #9998c1;
+  border-radius: 10px;
+  border: 1px solid #0b0b15;
+  overflow: visible;
+}
+
+.crm-container h2,
+.crm-container h3 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* -------------------------
+   INPUTS, TEXTAREA, SELECT
+------------------------- */
+.crm-container input,
+.crm-container textarea,
+.crm-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #c6b7b7;
+  background: #acc1da;
+  color: #130909;
+  font-size: 15px;
+  outline: none;
+}
+
+.crm-container input:focus,
+.crm-container textarea:focus,
+.crm-container select:focus {
+  background: #7b9feb;
+  border-color: #536eb7;
+}
+
+/* -------------------------
+   BUTTONS
+------------------------- */
+.crm-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #8aa9ca;
+  color: #7b9bb1;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.crm-btn:hover {
+  background: #0069d9;
+}
+
+/* ===========================
+       TABLE STYLES
+=========================== */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #979db8;
+  color: #222;
+  font-size: 16px;
+}
+
+.responsive-table thead {
+  background: #839cb6;
+  color: #a0a7cd;
+}
+
+.responsive-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.responsive-table td {
+  padding: 12px;
+  border-bottom: 1px solid #a9b3dc;
+}
+
+.responsive-table tr:nth-child(even) {
+  background: #89a3b7;
+}
+
+.responsive-table tr:hover {
+  background: #a5afc2;
+}
+
+/* Table buttons */
+.table-btn {
+  padding: 6px 12px;
+  margin-right: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.table-btn.delete {
+  background: #dc3545;
+  color: #2961d1;
+}
+
+.table-btn.update {
+  background: #28a745;
+  color: #1d47a0;
+}
+
+.table-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===========================
+       CARDS / TEXT BLOCKS
+=========================== */
+.crm-card {
+  background: #848eb0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #2580da;
+}
+
+.crm-text-block {
+  color: #222;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-info-item {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #2b5bdc;
+  border-radius: 10px;
+  border: 1px solid #224ea0;
+}
+
+/* Feedback stars */
+.feedback-stars {
+  display: flex;
+  gap: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ===========================
+       RESPONSIVE BREAKPOINTS
+=========================== */
+@media (max-width: 992px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #1b58b4;
+  }
+
+  .dashboard-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-menu li {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .sidebar h2 {
+    font-size: 20px;
+  }
+
+  .sidebar-menu button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .crm-container {
+    padding: 15px;
+  }
+
+  .crm-container input,
+  .crm-container textarea,
+  .crm-container select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .crm-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .responsive-table th,
+  .responsive-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .table-btn {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .crm-container {
+    padding: 12px;
+  }
+
+  .responsive-table th,
+  .responsive-table td {
+    padding: 6px;
+    font-size: 12px;
+  }
+}

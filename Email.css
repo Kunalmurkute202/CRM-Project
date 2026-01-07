@@ -1,0 +1,101 @@
+/* ===========================
+   EMAIL COMPOSER CONTAINER
+   =========================== */
+
+.email-container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.email-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ===========================
+   FORM ELEMENT STYLING
+   =========================== */
+
+.email-container select,
+.email-container input,
+.email-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background: #fafafa;
+}
+
+.email-container textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.email-container input:focus,
+.email-container textarea:focus,
+.email-container select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 4px rgba(13, 110, 253, 0.4);
+}
+
+/* ===========================
+   BUTTON STYLING
+   =========================== */
+
+.email-container button {
+  width: 100%;
+  padding: 12px;
+  background: #0d6efd;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.email-container button:hover {
+  background: #084298;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 768px) {
+  .email-container {
+    padding: 20px;
+    margin: 15px;
+  }
+
+  .email-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .email-container {
+    padding: 15px;
+  }
+
+  .email-title {
+    font-size: 20px;
+  }
+
+  .email-container input,
+  .email-container select,
+  .email-container textarea {
+    font-size: 14px;
+  }
+}

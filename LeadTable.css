@@ -1,0 +1,80 @@
+/* ====== TABLE CONTAINER ====== */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* 👉 Prevent table from breaking on small screens */
+  margin-top: 20px;
+}
+
+/* ====== TABLE ====== */
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff; /* white background so no text hides */
+  color: #222; /* always visible */
+  font-size: 16px;
+}
+
+/* ====== HEADERS ====== */
+.responsive-table thead {
+  background: #007bff;   /* blue */
+  color: #fff;           /* white text */
+}
+
+.responsive-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* ====== ROWS ====== */
+.responsive-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.responsive-table tr:nth-child(even) {
+  background: #f7f7f7; /* light grey row */
+}
+
+/* Hover effect */
+.responsive-table tr:hover {
+  background: #e8f0fe;
+}
+
+/* ====== BUTTONS ====== */
+.table-btn {
+  padding: 6px 12px;
+  margin-right: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.table-btn.delete {
+  background: #dc3545;
+  color: #fff;
+}
+
+.table-btn.update {
+  background: #28a745;
+  color: #fff;
+}
+
+.table-btn:hover {
+  opacity: 0.9;
+}
+
+/* ====== MOBILE RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .responsive-table th,
+  .responsive-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .table-btn {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}
