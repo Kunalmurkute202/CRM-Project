@@ -1,5 +1,5 @@
 import axios from 'axios';
-// 🔥 Add interceptor RIGHT AFTER axios import
+
 axios.interceptors.request.use((config) => {
   const token = localStorage.getItem("token"); // get JWT
 
