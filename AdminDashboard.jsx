@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-//import "../CSS/Side.css";
-//import "../CSS/Main.css";
 import "../CSS/Customer.css";
 import AllLead from "../DashboardP/AllLead";
 import TicketList from "../Customdash/Ticketlist";
