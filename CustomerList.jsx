@@ -14,11 +14,6 @@ const CustomerList = () => {
     .then(res => setCustomer(res.data))
     }
 
-    //  const handledelete=(id)=>{
-    //      deleteUserById(id) ;
-    //      console.log("User deleted");
-    //      fetchUsers();
-    // }
   return (
     <>
     <table>
@@ -41,7 +36,6 @@ const CustomerList = () => {
                 <td>{item.city}</td>
                 <td>
                     <button onClick={()=>navigate(`/update/${item.id}`)}>Update</button>
-                    {/* <button onClick={()=>handledelete(item.id)}>Delete</button> */}
                 </td>
                     </tr>
                 ))
